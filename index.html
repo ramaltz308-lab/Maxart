@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MAXART — Graphite & Charcoal Art, Tanzania</title>
+<meta name="description" content="MAXART: original graphite and charcoal portraits, custom commissions and drawing supplies. Based in Tanzania, delivery across Tanzania and Kenya.">
+<meta property="og:title" content="MAXART — Graphite & Charcoal Art"><meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"MAXART","jobTitle":"Artist","sameAs":["https://www.instagram.com/_maxart/","https://www.youtube.com/@Maxart13","https://www.youtube.com/@MaxEmpire-13"]}</script>
+<style>
+:root{--c:#191919;--d:#292929;--g:#777;--o:#F5F4F0;--w:#fff;--s:#bfbfbf}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{font:16px/1.6 Inter,system-ui,sans-serif;background:var(--o);color:var(--c)}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.1}
+h2{font-size:clamp(2rem,5vw,3rem);margin-bottom:.5rem}
+a{color:inherit}button,input,select,textarea{font:inherit}
+header{position:sticky;top:0;z-index:20;background:rgba(25,25,25,.96);color:var(--o);display:flex;align-items:center;gap:1rem;padding:.8rem 1.2rem}
+.logo{font:600 1.6rem "Cormorant Garamond",serif;letter-spacing:.2em;text-decoration:none}
+nav{display:flex;gap:1.2rem;margin-left:auto;font-size:.78rem;letter-spacing:.12em}
+nav a{text-decoration:none;opacity:.75;padding:.3rem 0}nav a.on,nav a:hover{opacity:1;border-bottom:1px solid var(--s)}
+.soc{display:flex;gap:.7rem;padding-left:1rem;border-left:1px solid #444}
+.soc a{display:grid;place-items:center;width:28px;height:28px}.soc svg,.fab svg{width:100%;height:100%;fill:currentColor}
+#menu{display:none;background:none;border:0;color:inherit;font-size:1.6rem;margin-left:auto}
+@media(max-width:860px){#menu{display:block}nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--c);padding:1rem 1.2rem;margin:0}nav.open{display:flex}.soc{margin-left:0}}
+main>section{display:none;padding:3rem 1.2rem;max-width:1180px;margin:auto;animation:f .6s}
+main>section.on{display:block}@keyframes f{from{opacity:0;transform:translateY(12px)}}
+.hero{max-width:none!important;padding:0!important;min-height:82vh;background:radial-gradient(circle at 70% 40%,#555,#191919 70%);color:var(--o);display:none;align-items:center}
+.hero.on{display:flex!important}.hero div{padding:2rem 1.5rem;max-width:640px;margin-left:max(1.5rem,8vw)}
+.hero h1{font-size:clamp(3.5rem,12vw,7rem);letter-spacing:.12em}.hero p{margin:.8rem 0 1.5rem;opacity:.85}
+.btn{display:inline-block;padding:.8rem 1.4rem;border:1px solid currentColor;background:none;color:inherit;letter-spacing:.12em;font-size:.78rem;cursor:pointer;text-decoration:none;margin:0 .6rem .6rem 0}
+.btn.f{background:var(--c);color:var(--o);border-color:var(--c)}.btn:hover{opacity:.8}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.2rem;margin-top:1.5rem}
+.card{background:var(--w);cursor:pointer;transition:transform .3s}.card:hover{transform:translateY(-4px)}
+.ph{aspect-ratio:4/5;background:linear-gradient(135deg,#d9d7d0,#8d8b86);display:grid;place-items:center;color:#fff;font-size:.7rem;letter-spacing:.15em;background-size:cover;background-position:center}
+.ph.w{aspect-ratio:1}.card .b{padding:.9rem}.card small{color:var(--g)}
+.tag{display:inline-block;font-size:.65rem;letter-spacing:.12em;padding:.15rem .5rem;background:var(--c);color:var(--o)}.tag.SOLD{background:var(--g)}
+.bar{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}.bar input,.bar select,form input,form select,form textarea{padding:.6rem;border:1px solid var(--s);background:var(--w);width:100%;max-width:100%}
+.bar input,.bar select{width:auto;flex:1 1 150px}
+.chip{padding:.4rem .9rem;border:1px solid var(--s);background:none;cursor:pointer}.chip.on{background:var(--c);color:var(--o)}
+form{display:grid;gap:.8rem;max-width:620px;margin-top:1rem}label{font-size:.8rem;color:var(--d)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1rem;margin:1.5rem 0}.steps div{border-top:1px solid var(--c);padding-top:.6rem}
+.note{font-size:.8rem;color:var(--g);margin-top:.6rem}
+#modal,#cart{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:40;display:none;justify-content:flex-end}
+#modal{justify-content:center;align-items:center;padding:1rem}#modal.on,#cart.on{display:flex}
+.pane{background:var(--o);padding:1.5rem;max-width:760px;width:100%;max-height:92vh;overflow:auto}
+#cart .pane{max-width:400px;max-height:none;height:100%}
+.row{display:flex;justify-content:space-between;gap:.6rem;padding:.6rem 0;border-bottom:1px solid #ddd;font-size:.9rem}
+.q button{width:26px}.fab{position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;padding:12px;z-index:30;box-shadow:0 4px 14px #0004}
+#cb{position:fixed;left:16px;bottom:16px;z-index:30;background:var(--c);color:var(--o);border:0;padding:.8rem 1.1rem;cursor:pointer}
+footer{background:var(--c);color:var(--o);padding:2.5rem 1.2rem;text-align:center}footer .soc{justify-content:center;border:0;margin:1rem 0}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;align-items:center}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head><body>
+<header><a class="logo" href="#home">MAXART</a><button id="menu" aria-label="Menu">☰</button>
+<nav id="nav"><a href="#home">HOME</a><a href="#gallery">ART GALLERY</a><a href="#commissions">COMMISSIONS</a><a href="#supplies">ART SUPPLIES</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a></nav>
+<div class="soc" id="soc1"></div></header>
+<main>
+<section id="home" class="hero"><div><h1>MAXART</h1><h3 style="letter-spacing:.3em;font-size:1rem">GRAPHITE &amp; CHARCOAL ART</h3><p>“Turning moments, faces and emotions into timeless artwork.”</p><a class="btn" href="#gallery">EXPLORE THE GALLERY</a><a class="btn" href="#commissions">COMMISSION A PORTRAIT</a></div></section>
+<section id="home2" data-home><h2>Featured artworks</h2><div class="grid" id="feat"></div>
+<div class="two" style="margin-top:3rem"><div><h2>The artist</h2><p>MAXART is an independent artist from Tanzania creating original graphite drawings, charcoal portraits and custom commissions. <a href="#about">Read the story</a>.</p></div><div><h2>The Artist's Toolbox</h2><p>Drawing supplies, curated for beginners to professionals. Order through WhatsApp.</p><a class="btn f" href="#supplies">SHOP SUPPLIES</a></div></div>
+<h2 style="margin-top:3rem">From photograph to artwork</h2><p class="note">Drag to compare. Placeholder, replace with a photo/drawing pair you have permission to show.</p>
+<div id="ba" style="position:relative;aspect-ratio:16/9;max-width:700px;background:#8d8b86;overflow:hidden;margin-top:1rem;touch-action:none"><div style="position:absolute;inset:0;display:grid;place-items:center;color:#fff">DRAWING</div><div id="baTop" style="position:absolute;inset:0;width:50%;overflow:hidden;background:#d9d7d0;display:grid;place-items:center;color:#333"><span>PHOTO</span></div><input id="baR" type="range" min="0" max="100" value="50" aria-label="Comparison slider" style="position:absolute;bottom:8px;left:5%;width:90%"></div>
+<h2 style="margin-top:3rem">Process</h2><div class="steps"><div>REFERENCE</div><div>INITIAL SKETCH</div><div>FACIAL FEATURES</div><div>SHADING</div><div>DETAILS</div><div>FINAL ARTWORK</div></div>
+<p>Watch on <a href="https://www.youtube.com/@Maxart13" target="_blank" rel="noopener">MAXART</a> (art) and <a href="https://www.youtube.com/@MaxEmpire-13" target="_blank" rel="noopener">MAXEMPIRE</a> (storytelling).</p></section>
+
+<section id="gallery"><h2>Art Gallery</h2><div class="bar" id="gf"></div><div class="grid" id="gg"></div><p class="note">Sold works stay visible as part of the portfolio.</p></section>
+
+<section id="commissions"><h2>TURN YOUR MOMENT INTO ART.</h2><p>Have a photograph, memory or special person you would love to preserve? Commission a personalised graphite or charcoal portrait carefully created with attention to detail.</p>
+<div class="steps"><div>01 — SEND YOUR PHOTO</div><div>02 — DISCUSS THE DETAILS</div><div>03 — YOUR ARTWORK IS CREATED</div><div>04 — FINAL ARTWORK AND DELIVERY</div></div>
+<form id="cf"><label>Full name<input name="Name" required></label><label>WhatsApp number<input name="WhatsApp" required inputmode="tel"></label><label>Email (optional)<input name="Email" type="email"></label>
+<label>Portrait type<select name="Type"><option>Individual portrait</option><option>Couple portrait</option><option>Family portrait</option><option>Custom artwork</option></select></label>
+<label>Number of people<input name="People" type="number" min="1" value="1"></label><label>Medium<select name="Medium"><option>Graphite</option><option>Charcoal</option><option>Not sure</option></select></label>
+<label>Size<select name="Size"><option>A4</option><option>A3</option><option>A2</option><option>Custom</option></select></label>
+<label>Background preference<input name="Background"></label><label>Deadline<input name="Deadline" type="date"></label><label>Budget range (TZS)<input name="Budget"></label>
+<label>Additional instructions<textarea name="Notes" rows="3"></textarea></label>
+<p class="note">Reference photo: after the WhatsApp chat opens, attach your photo in the conversation. It is never uploaded to or shown on this site. A commission is not confirmed until MAXART responds.</p><button class="btn f">SEND ON WHATSAPP</button></form></section>
+
+<section id="supplies"><h2>THE ARTIST'S TOOLBOX</h2><p>Everything you need to bring your imagination to life.</p>
+<div class="bar"><input id="ps" type="search" placeholder="Search products" aria-label="Search"><select id="pc"></select><select id="pb"></select><select id="po"><option value="">Sort</option><option value="a">Price low–high</option><option value="d">Price high–low</option><option value="n">Newest</option></select></div>
+<div class="grid" id="pg"></div><p class="note">Prices in TZS. Delivery cost is confirmed by MAXART on WhatsApp (Tanzania and Kenya). Listed prices are being verified with suppliers.</p></section>
+
+<section id="about"><h2>THE STORY BEHIND MAXART.</h2><div class="two"><div class="ph">ARTIST PHOTO (placeholder)</div><div><p>MAXART is an independent artist brand based in Tanzania, dedicated to original artwork, graphite drawings, charcoal portraits, custom commissions and art prints.</p><p style="margin-top:1rem">[Add your personal story, philosophy and journey here.]</p></div></div></section>
+
+<section id="contact"><h2>LET'S CREATE SOMETHING PERSONAL.</h2><div style="margin:1rem 0"><a class="btn f" href="#" data-wa="Hello MAXART, I would like to order original artwork.">ORDER ORIGINAL ARTWORK</a><a class="btn" href="#commissions">COMMISSION A PORTRAIT</a><a class="btn" href="#supplies">ORDER DRAWING SUPPLIES</a></div>
+<form id="kf"><label>Name<input name="Name" required></label><label>Email<input name="Email" type="email"></label><label>WhatsApp<input name="WhatsApp"></label><label>Inquiry<select name="Inquiry"><option>Original artwork</option><option>Commission</option><option>Drawing supplies</option></select></label><label>Message<textarea name="Message" rows="4" required></textarea></label><button class="btn f">SEND ON WHATSAPP</button></form>
+<p class="note" style="margin-top:1rem">Based in Tanzania. Delivery available across Tanzania and Kenya.</p></section>
+</main>
+
+<footer><div class="logo">MAXART</div><p>Graphite &amp; Charcoal Art.</p><p style="font-size:.78rem;letter-spacing:.12em;margin-top:.6rem">HOME · ART GALLERY · COMMISSIONS · ART SUPPLIES · ABOUT · CONTACT</p><div class="soc" id="soc2"></div><p style="font-size:.8rem">© 2026 MAXART. All Rights Reserved.</p></footer>
+<a class="fab" id="fab" aria-label="Chat on WhatsApp" target="_blank" rel="noopener"></a>
+<button id="cb">CART (0)</button>
+<div id="modal" role="dialog" aria-modal="true"><div class="pane" id="mp"></div></div>
+<div id="cart"><div class="pane" id="cp"></div></div>
+
+<script>
+/* ===== EDIT HERE ===== */
+const WA="255788064144";
+const LINKS={ig:"https://www.instagram.com/_maxart/",yt:"https://www.youtube.com/@Maxart13",ye:"https://www.youtube.com/@MaxEmpire-13"};
+// st: AVAILABLE | SOLD | COMMISSIONED | LIMITED EDITION. Add img:"/images/x.jpg" for real photos.
+const ART=[
+{id:"MX-001",t:"Placeholder Portrait I",cat:"Graphite Portraits",med:"Graphite on paper",dim:"A3",yr:2026,st:"AVAILABLE",price:null,desc:"Replace with your artwork."},
+{id:"MX-002",t:"Placeholder Portrait II",cat:"Charcoal Portraits",med:"Charcoal on paper",dim:"A2",yr:2026,st:"SOLD",price:null,desc:"Sold works stay in the portfolio."},
+{id:"MX-003",t:"Placeholder Original",cat:"Original Artwork",med:"Graphite",dim:"A3",yr:2025,st:"AVAILABLE",price:null,desc:"Replace with your artwork."},
+{id:"MX-004",t:"Placeholder Print",cat:"Art Prints",med:"Giclée print",dim:"A4",yr:2026,st:"LIMITED EDITION",price:null,desc:"Replace with your artwork."}];
+// price = MAXART selling price (TZS). null = REQUEST PRICE. Starting values are SUPPLIER REFERENCE prices: set your own.
+const P=[
+["Monte Marte Graphite Pencils 12pc","Graphite","Monte Marte",9500],["Art Ranger Compressed Charcoal 6pc","Charcoal","Art Ranger",5500],
+["Art Ranger Charcoal Powder 120g","Charcoal","Art Ranger",8000],["Art Ranger White Charcoal Pencils 3pc","Charcoal","Art Ranger",5500],
+["Keep Smiling Electric Eraser","Erasers","Keep Smiling",9500],["Hardbound Sketchbook 160gsm","Paper & Sketchbooks","—",6500],
+["Spiral Sketchbook 160gsm","Paper & Sketchbooks","—",6000],["Sketch Board","Studio Equipment","—",8000],
+["Fixative Spray","Preservation","—",6500],["Monte Marte Sketch & Draw Collection 17pc","Kits","Monte Marte",15000],
+["Monte Marte Sketch & Draw Set 18pc","Kits","Monte Marte",19500],["Tracing Paper Pad","Paper & Sketchbooks","—",8000],
+["Wooden Easel","Studio Equipment","—",25000],["Watercolour Pad 300gsm","Paper & Sketchbooks","—",15000],
+["Blending Stumps","Blending","—",null],["Kneaded Eraser","Erasers","—",null]
+].map((a,i)=>({id:"P"+i,n:a[0],cat:a[1],br:a[2],price:a[3],stock:true,i}));
+/* ===================== */
+const $=s=>document.querySelector(s),T=n=>n==null?"REQUEST PRICE":"TZS "+n.toLocaleString("en-US");
+const wa=m=>`https://wa.me/${WA}?text=${encodeURIComponent(m)}`;
+const ic={ig:'<path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 8a3 3 0 110-6 3 3 0 010 6zM17.5 6.5a1 1 0 100 2 1 1 0 000-2zM7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3z"/>',
+yt:'<path d="M21.6 7.2a2.5 2.5 0 00-1.8-1.8C18.200 5 12 5 12 5s-6.200 0-7.800.4A2.500 2.500 0 002.400 7.200C2 8.800 2 12 2 12s0 3.200.4 4.800a2.500 2.500 0 001.800 1.800C5.800 19 12 19 12 19s6.200 0 7.800-.4a2.500 2.500 0 001.800-1.800c.4-1.600.4-4.800.4-4.800s0-3.200-.4-4.800zM10 15V9l5.200 3z"/>',
+wa:'<path d="M12 2a10 10 0 00-8.600 15L2 22l5.200-1.400A10 10 0 1012 2zm5.200 14c-.2.600-1.300 1.200-1.800 1.200-.5.100-1 .2-3.300-.7-2.800-1.100-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 2c.1.200.1.300 0 .5l-.4.600c-.1.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.100 1 2.100 1.300 2.400 1.400.3.100.4.100.6-.1l.8-1c.2-.3.400-.2.600-.1l1.900.9c.3.100.5.200.5.300.1.200.1.800-.1 1.400z"/>'};
+const svg=k=>`<svg viewBox="0 0 24 24" aria-hidden="true">${ic[k]}</svg>`;
+const socials=`<a href="${LINKS.ig}" target="_blank" rel="noopener" aria-label="MAXART on Instagram" title="Instagram">${svg("ig")}</a><a href="${LINKS.yt}" target="_blank" rel="noopener" aria-label="MAXART YouTube channel (art)" title="MAXART — Art channel">${svg("yt")}</a><a href="${LINKS.ye}" target="_blank" rel="noopener" aria-label="MAXEMPIRE YouTube channel (storytelling)" title="MAXEMPIRE — Storytelling">${svg("yt")}</a><a href="${wa("Hello MAXART!")}" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" title="WhatsApp">${svg("wa")}</a>`;
+$("#soc1").innerHTML=socials;$("#soc2").innerHTML=socials;$("#fab").innerHTML=svg("wa");$("#fab").href=wa("Hello MAXART!");
+document.querySelectorAll("[data-wa]").forEach(a=>{a.href=wa(a.dataset.wa);a.target="_blank"});
+// routing
+const pages=["home","gallery","commissions","supplies","about","contact"];
+function route(){let h=(location.hash||"#home").slice(1);if(!pages.includes(h))h="home";
+document.querySelectorAll("main>section").forEach(s=>s.classList.remove("on"));
+if(h=="home"){$("#home").classList.add("on");$("#home2").classList.add("on")}else $("#"+h).classList.add("on");
+document.querySelectorAll("nav a").forEach(a=>a.classList.toggle("on",a.hash=="#"+h));$("#nav").classList.remove("open");scrollTo(0,0);
+document.title=(h=="home"?"":h.toUpperCase()+" · ")+"MAXART — Graphite & Charcoal Art"}
+addEventListener("hashchange",route);$("#menu").onclick=()=>$("#nav").classList.toggle("open");
+// gallery
+const acard=a=>`<div class="card" tabindex="0" onclick="art('${a.id}')" onkeydown="if(event.key=='Enter')art('${a.id}')"><div class="ph" ${a.img?`style="background-image:url(${a.img})"`:""}>${a.img?"":"IMAGE"}</div><div class="b"><span class="tag ${a.st.split(" ")[0]}">${a.st}</span><h3 style="margin-top:.4rem">${a.t}</h3><small>${a.med} · ${a.dim}</small></div></div>`;
+let gcat="All";const cats=["All",...new Set(ART.map(a=>a.cat))];
+function gal(){$("#gf").innerHTML=cats.map(c=>`<button class="chip ${c==gcat?"on":""}" onclick="gcat='${c}';gal()">${c}</button>`).join("");
+$("#gg").innerHTML=ART.filter(a=>gcat=="All"||a.cat==gcat).map(acard).join("")}
+$("#feat").innerHTML=ART.slice(0,3).map(acard).join("");
+function art(id){const a=ART.find(x=>x.id==id);const rel=ART.filter(x=>x.id!=id&&x.cat==a.cat).slice(0,2);
+$("#mp").innerHTML=`<button class="btn" onclick="cm()">CLOSE ✕</button><div class="ph" style="aspect-ratio:4/3;overflow:hidden;cursor:zoom-in" onclick="this.firstElementChild?this.classList.toggle('z'):0">${a.img?`<img src="${a.img}" alt="${a.t}" style="width:100%;height:100%;object-fit:contain;transition:transform .3s" onclick="this.style.transform=this.style.transform?'':'scale(2)'">`:"IMAGE"}</div><h2 style="margin-top:1rem">${a.t}</h2><span class="tag ${a.st.split(" ")[0]}">${a.st}</span><p>${a.desc}</p><p class="note">${a.med} · ${a.dim} · ${a.yr} · Ref ${a.id} · ${T(a.price)}</p>${a.st=="SOLD"?"":`<a class="btn f" target="_blank" href="${wa(`MAXART — ARTWORK ORDER\nTitle: ${a.t}\nRef: ${a.id}\nI would like to order this artwork.`)}">ORDER THIS ARTWORK</a><a class="btn" target="_blank" href="${wa(`Hello MAXART, I'd like to inquire about "${a.t}" (Ref ${a.id}).`)}">INQUIRE ON WHATSAPP</a>`}${rel.length?`<h3>Related</h3>`+rel.map(r=>`<p><a href="#" onclick="art('${r.id}');return false">${r.t}</a></p>`).join(""):""}`;$("#modal").classList.add("on")}
+const cm=()=>$("#modal").classList.remove("on");$("#modal").onclick=e=>{if(e.target.id=="modal")cm()};
+// marketplace
+const opt=(el,l,all)=>$(el).innerHTML=`<option value="">${all}</option>`+[...new Set(l)].map(x=>`<option>${x}</option>`).join("");
+opt("#pc",P.map(p=>p.cat),"All categories");opt("#pb",P.map(p=>p.br).filter(b=>b!="—"),"All brands");
+function shop(){const q=$("#ps").value.toLowerCase(),c=$("#pc").value,b=$("#pb").value,o=$("#po").value;
+let l=P.filter(p=>(!q||p.n.toLowerCase().includes(q))&&(!c||p.cat==c)&&(!b||p.br==b));
+if(o=="a")l.sort((x,y)=>(x.price??1e9)-(y.price??1e9));if(o=="d")l.sort((x,y)=>(y.price??-1)-(x.price??-1));if(o=="n")l.sort((x,y)=>y.i-x.i);
+$("#pg").innerHTML=l.length?l.map(p=>`<div class="card" style="cursor:default"><div class="ph w">${p.cat.toUpperCase()}</div><div class="b"><small>${p.br}</small><h3 style="font-size:1.2rem">${p.n}</h3><p><b>${T(p.price)}</b> · <small>${p.stock?"In stock":"Out of stock"}</small></p>${p.price==null?`<a class="btn" target="_blank" href="${wa("Hello MAXART, price request: "+p.n)}">REQUEST PRICE</a>`:`<button class="btn f" ${p.stock?"":"disabled"} onclick="add('${p.id}')">ADD TO CART</button>`}</div></div>`).join(""):"<p>No products found.</p>"}
+["#ps","#pc","#pb","#po"].forEach(s=>$(s).oninput=shop);
+// cart
+let cart={};try{cart=JSON.parse(localStorage.getItem("mx_cart")||"{}")}catch(e){}
+const save=()=>{try{localStorage.setItem("mx_cart",JSON.stringify(cart))}catch(e){}
+$("#cb").textContent="CART ("+Object.values(cart).reduce((a,b)=>a+b,0)+")"};
+const add=id=>{cart[id]=(cart[id]||0)+1;save();cartUI()};
+const qty=(id,d)=>{cart[id]=(cart[id]||0)+d;if(cart[id]<=0)delete cart[id];save();cartUI()};
+const items=()=>Object.keys(cart).map(id=>({...P.find(p=>p.id==id),q:cart[id]})).filter(x=>x.n);
+function cartUI(){const it=items(),sub=it.reduce((a,x)=>a+x.price*x.q,0);
+$("#cp").innerHTML=`<button class="btn" onclick="$('#cart').classList.remove('on')">CLOSE ✕</button><h2>Your cart</h2>`+(it.length?it.map(x=>`<div class="row"><span>${x.n}<br><small>${T(x.price)}</small></span><span class="q"><button onclick="qty('${x.id}',-1)" aria-label="Less">−</button> ${x.q} <button onclick="qty('${x.id}',1)" aria-label="More">+</button></span></div>`).join("")+`<p style="margin:1rem 0"><b>Subtotal: ${T(sub)}</b></p><form id="of" style="margin:0"><label>Your name<input name="n" required></label><label>Your WhatsApp number<input name="w" required inputmode="tel"></label><label>Delivery location<input name="l" required></label><label>Delivery preference<select name="d"><option>Pickup</option><option>Delivery in Tanzania</option><option>Delivery to Kenya</option></select></label><label>Instructions<textarea name="i" rows="2"></textarea></label><button class="btn f">CHECKOUT ON WHATSAPP</button></form><p class="note">Delivery cost is confirmed by MAXART. Your order is not confirmed until MAXART replies.</p>`:"<p>Your cart is empty.</p>");
+const f=$("#of");if(f)f.onsubmit=e=>{e.preventDefault();const d=Object.fromEntries(new FormData(f));
+open(wa(`MAXART — NEW ORDER\n\nCustomer name: ${d.n}\nCustomer WhatsApp number: ${d.w}\nDelivery location: ${d.l}\n\nProduct details:\n`+it.map(x=>`- ${x.n}\n  Quantity: ${x.q}\n  Unit price: ${T(x.price)}\n  Line total: ${T(x.price*x.q)}`).join("\n")+`\n\nSubtotal: ${T(sub)}\nDelivery preference: ${d.d}\nAdditional instructions: ${d.i||"-"}`),"_blank")}}
+$("#cb").onclick=()=>{cartUI();$("#cart").classList.add("on")};$("#cart").onclick=e=>{if(e.target.id=="cart")e.target.classList.remove("on")};
+// forms
+const send=(id,title)=>$(id).onsubmit=e=>{e.preventDefault();const d=new FormData(e.target);open(wa(title+"\n\n"+[...d].filter(x=>x[1]).map(x=>x[0]+": "+x[1]).join("\n")),"_blank")};
+send("#cf","MAXART — COMMISSION INQUIRY");send("#kf","MAXART — CONTACT");
+$("#baR").oninput=e=>$("#baTop").style.width=e.target.value+"%";
+gal();shop();save();route();
+</script></body></html>
